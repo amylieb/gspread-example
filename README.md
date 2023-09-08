@@ -1,7 +1,7 @@
 # gspread-example
 A very basic example of how to use [gspread]([url](https://docs.gspread.org/en/v5.10.0/)https://docs.gspread.org/en/v5.10.0/) data to populate a jinja template.
 
-This code uses google bot credentials stored in `~/.config/gspread/service_account.json` to open a google spreadsheet called ["New Switches"](https://docs.google.com/spreadsheets/d/1W9wAzB7t3ttj2Dl_M5KnImShfwOS8hLvcyE-QwvGf1w/edit#gid=0). For each tab on the spreadsheet, it creates switchport configuration for an IOS device and saves it as a file based on the name of the tab.
+This code uses google bot credentials stored in `~/.config/gspread/service_account.json` to open a google sheet called [New Switches](https://docs.google.com/spreadsheets/d/1W9wAzB7t3ttj2Dl_M5KnImShfwOS8hLvcyE-QwvGf1w/edit#gid=0). For each tab it creates switchport configuration for an IOS device and saves it as a file based on the name of the tab.
 
 ### Step 1: Google Setup ###
 - Follow the instructions for [creating a bot service account](https://docs.gspread.org/en/v5.10.0/oauth2.html#for-bots-using-service-account)
