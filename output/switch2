@@ -1,0 +1,26 @@
+
+interface Gi1/1
+ description A/V
+ switchport mode access
+ switchport access vlan 40
+
+interface Gi1/2
+ description A/V
+ switchport mode access
+ switchport access vlan 40
+
+interface Gi1/3
+ description Desktop
+ switchport mode access
+ switchport access vlan 10
+ switchport voice vlan 2
+
+interface Gi1/4
+ description AP
+ switchport mode access
+ switchport access vlan 30
+
+interface Gi1/5
+ description AP
+ switchport mode access
+ switchport access vlan 30
