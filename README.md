@@ -9,5 +9,16 @@ A very basic example of how to use [gspread]([url](https://docs.gspread.org/en/v
 ### Step 2: Code Setup ###
 - Clone this repo onto your laptop, create a python3 venv with `jinja2` and `gspread`, and run the code. Below are steps to do this on a linux or mac from the CLI:
 ```
+bash-3.2$ git clone git@github.com:amylieb/gspread-example.git
 
+[ ... output omitted ... ]
+
+bash-3.2$ cd gspread-example/
+bash-3.2$ python3 -m venv venv
+bash-3.2$ source venv/bin/activate
+(venv) bash-3.2$ pip install gspread jinja2
+
+[ ... output omitted ... ]
+
+(venv) bash-3.2$ python create_configlets.py
 ```
