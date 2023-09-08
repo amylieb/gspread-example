@@ -12,5 +12,5 @@ for ws in sh.worksheets():
     template = jinja2.Template(template_str)
     output = template.render(port_list=port_list)
 
-    with open(f"output/{ws.title}","w") as fh:
+    with open(ws.title,"w") as fh:
         fh.write(output)
