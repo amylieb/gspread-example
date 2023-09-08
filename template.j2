@@ -1,0 +1,9 @@
+{% for port in port_list %}
+interface {{ port['interface']}}
+ description {{ port['description'] }}
+ switchport mode access
+ switchport access vlan {{ port['vlan'] }}
+ {%- if port['voip vlan'] != '' %}
+ switchport voice vlan {{ port['voip vlan'] }}
+ {%- endif %}
+{% endfor %}
