@@ -1,5 +1,5 @@
 # gspread-example
-A very basic example of how to use [gspread]([url](https://docs.gspread.org/en/v5.10.0/)https://docs.gspread.org/en/v5.10.0/) data to populate a jinja template.
+A very basic example of how to use [gspread]([url](https://docs.gspread.org/en/v5.10.0/)https://docs.gspread.org/en/v5.10.0/) to pull data from a google sheet and populate a jinja template.
 
 This code uses google bot credentials stored in `~/.config/gspread/service_account.json` to open a google sheet called [New Switches](https://docs.google.com/spreadsheets/d/1W9wAzB7t3ttj2Dl_M5KnImShfwOS8hLvcyE-QwvGf1w/edit#gid=0). For each tab it generates access port configuration for an IOS device based on a [jinja template](https://github.com/amylieb/gspread-example/blob/main/template.j2) and saves it as a file based on the name of the tab.
 
